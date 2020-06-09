@@ -28,6 +28,8 @@ return [
     // ...
     'tiles' => [
         'shopify' => [
+            'store' => env('SHOPIFY_STORE'),
+            'api_version' => '2020-04',
             'api_key' => env('SHOPIFY_API_KEY'),
             'password' => env('SHOPIFY_API_PASSWORD'),
         ]
@@ -47,12 +49,12 @@ protected function schedule(Schedule $schedule)
 }
 ```
 
-In your dashboard view you can use three separate tiles:
+In your dashboard view you can use the tile:
 * `livewire:shopify-tile`
 
 ```html
 <x-dashboard>
-    <livewire:shopify-tile position="a1:a4" />
+    <livewire:shopify-tile position="a1:b4" />
 </x-dashboard>
 ```
 
