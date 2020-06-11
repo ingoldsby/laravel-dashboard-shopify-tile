@@ -59,9 +59,6 @@
 					<div class="self-center font-bold text-4xl tracking-wide leading-none">
 						{{ $shopify['products']['count'] }}
 					</div>
-					<div class="text-dimmed text-xs">
-						{{ $shopify['products']['latest']['title'] }} created {{ \Carbon\Carbon::parse($shopify['orders']['latest']['created_at'])->diffForHumans() }}
-					</div>
 				</div>
 			</div>
 		</div>

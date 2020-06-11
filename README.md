@@ -5,6 +5,8 @@
 
 This tile can be used on [the Laravel Dashboard](https://docs.spatie.be/laravel-dashboard) to display Shopify information.
 
+![screenshot](https://user-images.githubusercontent.com/26500496/84368299-bab77800-ac18-11ea-981b-953a200e966a.png)
+
 ## Installation
 
 You can install the package via composer:
@@ -80,7 +82,7 @@ If you discover any security related issues, please email instead of using the i
 
 I have learnt a lot from Spatie's various packages, including [Mailcoach](https://mailcoach.app), and would recommend you check them out if you want to know more.
 
-Learn how to create a package like this one, by watching Spatie's premium video course:
+Learn how to create a package like theirs, by watching Spatie's premium video course:
 
 [![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
 

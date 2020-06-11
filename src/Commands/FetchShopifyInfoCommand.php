@@ -26,7 +26,6 @@ class FetchShopifyInfoCommand extends Command
         $response['checkouts']['latest'] = $api->getShopifyInfo('checkouts', 'latest');
 
         $response['products']['count'] = $api->getShopifyInfo('products', 'count');
-        $response['products']['latest'] = $api->getShopifyInfo('products', 'latest');
 
         ShopifyStore::make()->setShopifyInfo($response);
 
