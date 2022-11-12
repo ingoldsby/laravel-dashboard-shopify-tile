@@ -46,18 +46,11 @@ class ShopifyApi
         if ($type == 'latest') {
             $url = $url . '?limit=1';
 
-            switch ($endpoint) {
-                case 'orders':
-                    $url = $url . self::ORDERS_FIELDS;
-                    break;
-                case 'customers':
-                    $url = $url . self::CUSTOMERS_FIELDS;
-                    break;
-                case 'checkouts':
-                    $url = $url . self::CHECKOUTS_FIELDS;
-                    break;
-            }
-
+            $url = match($endpoint) {
+                'checkouts' => $url . self::CHECKOUTS_FIELDS,
+                'customers' => $url . self::CUSTOMERS_FIELDS,
+                'orders' => $url . self::ORDERS_FIELDS,
+            };
         }
 
         return $url;
