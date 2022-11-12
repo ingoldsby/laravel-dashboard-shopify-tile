@@ -31,7 +31,7 @@ return [
     'tiles' => [
         'shopify' => [
             'store' => env('SHOPIFY_STORE'),
-            'api_version' => '2020-04',
+            'api_version' => env('SHOPIFY_API_VERSION'),
             'api_key' => env('SHOPIFY_API_KEY'),
             'password' => env('SHOPIFY_API_PASSWORD'),
         ]
@@ -51,8 +51,7 @@ protected function schedule(Schedule $schedule)
 }
 ```
 
-In your dashboard view you can use the tile:
-* `livewire:shopify-tile`
+In your dashboard view you use the `livewire:shopify-tile` component.
 
 ```html
 <x-dashboard>
